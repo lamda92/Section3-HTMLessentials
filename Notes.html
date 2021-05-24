@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Notes</title>
+        <link rel="stylesheet" href="notes.css">
     </head>
     <body>
         <div>
@@ -48,7 +49,7 @@
 
             <a href="http://www.google.com">google.com</a>
         </div>
-        <hr>
+        
         <div>
             <h1>Section 4 - Next Steps & Semantics</h1>
                 <ul>
@@ -85,6 +86,7 @@
                     </li>
                 </ul>
         </div>
+        
         <div>
             <h1>Section 5 - Forms and Tables</h1>
                 <ul>
@@ -98,6 +100,69 @@
                         </ul>
                 </ul>
         </div> 
+        
+        <div>
+            <h1>Section 6 - Intro to CSS</h1>
+            <ul>
+                <li>Link CSS to html using Link element</li>
+                <li>Background property vs background-color - background is more powerful, can be used on images, etc</li>
+                <li>RGB color model - all colors developed from red, green, and blue so in the syntax, will need to specify how much of each color between 0 and 255</li>
+                <li>Hexadecimal (hex) color systems - same channels as rgb but using hex syntax (0-9 and A-F). F=15 in hexadecimal. Colors stored in two digits for R, G, and B. If digits are the same, can shorten to 3 digit hex.</li>
+                <li>Font weight - 400 is normal, 700 is bold</li>
+            </ul>
+        </div>
+        
+        <div>
+            <h1>Section 7 - CSS Selectors</h1>
+            <ul>
+                <li>Use comma "h1, h2" to apply styling to more than one tag</li>
+                <li>Descendent seletor: use space "li a" to apply styling to embedded elements, i.e., anchor tag embedded in a list</li>
+                <li>Adjacent selector: use plus "li + a" to apply styling to elements preceded by another element on the same level, i.e., header tag + paragraph</li>
+                <li>Attribute selector: element[type="x"] select based on particular attribute</li>
+                <li>Direct child: use greater than sign "div > li" to apply styling to elements one level below another element, i.e., div > list</li>
+                <li>Use "#id" if wanting to change a single item. Must give the item and id in the tag</li>
+                <li>Use ".class" if wanting to group items together. Must give all items the same class name in the tag</li>
+                <li>Pseudo classes: keyword added to selector that specifies special state of elements, starts with colon</li>
+                <li>Pseudo elements: modifiers to Selectors</li>
+                <li>Specificity: which selector wins when there are competing selectors</li>
+                    <ul>
+                        <li>ID > Class > Element</li>
+                    </ul>
+
+            </ul>
+        </div>
+        
+        <div>
+            <h1>Section 8 - CSS Box Model</h1>
+            <ul>
+                <li>Box Model</li>
+                    <ul>
+                        <li>Width and height</li>
+                        <li>Border-width (commonly use pixels for the unit), border-color, border-style 
+                            (can also just use  shorthand called border)</li>
+                        <li>Box-sizing: border-box - border is within the width specified for the text area</li>
+                        <li>Border-radius - can round out corners of border, can use % or px. 50% border makes circles</li>
+                        <li>Padding - spacing between text and border</li>
+                        <li>Margin - spacing outside of border between other elements</li>
+                        <li>Display property</li>
+                            <ul>
+                                <li>headers are block level elements, so properties take up entire line of space</li>
+                                <li>spans are inline elements, so properties do not take up entire line of space</li>
+                                <li>display property can change display of text - block level elements to be inline or inline to be block</li>
+                                <li>width, height, and margin are ignored for inline elements, padding not ignored</li>
+                                <li>All properties work for block elements</li>
+                                <li>Ems - relative units for font size based on font size of parent element, scaling properties as font size changes. It will unnecessarily increase the font size of nested items such as nested lists</li>
+                                <li>Rems (root ems) - derive font size from root element instead of parent element preceding next element</li>
+                            </ul>
+                    </ul>
+            </ul>
+        </div>
+        <div>
+            <h1>Section 9 - Other CSS Properties</h1>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
 
     </body>
     <footer>

@@ -1,0 +1,7 @@
+h1{
+    color:blue;
+}
+
+div:nth-of-type(2n){
+    background-color:gainsboro;
+}
